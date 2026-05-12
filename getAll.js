@@ -52,5 +52,5 @@ col.innerHTML = `
 }
 
 
-// 🔥 CLAVE: ejecutar cuando carga la página
+//  CLAVE: ejecutar cuando carga la página
 window.onload = getCelulares;
