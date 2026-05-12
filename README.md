@@ -13,7 +13,7 @@ Configuración de MySQL
 
 1 Crear una base de datos llamada:
 
-CREATE DATABASE celulares_db;
+CREATE DATABASE parcial_programacion;
 
 2 Luego crear la tabla:
 
@@ -41,7 +41,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'celulares_db'
+    database: 'parcial_programacion'
 });
 
 module.exports = db;
