@@ -13,7 +13,7 @@ async function eliminarCelular(id) {
 
     alert("Celular eliminado");
 
-    // 🔥 refrescar lista
+    //  refrescar lista
     getCelulares();
 
   } catch (error) {
