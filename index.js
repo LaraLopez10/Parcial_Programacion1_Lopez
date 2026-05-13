@@ -46,34 +46,26 @@ app.delete('/celulares/:id', (req, res) => {
 });
 
 app.put('/celulares/:id', (req, res) => {
-
   const { id } = req.params;
   const { nombre, precio, stock } = req.body;
-
   const sql = `
     UPDATE celulares
     SET nombre = ?, precio = ?, stock = ?
     WHERE id = ?
   `;
-
   db.query(sql, [nombre, precio, stock, id], (err, r) => {
-
     if (err) {
       return res.status(500).json({ error: err.message });
     }
-
     if (r.affectedRows === 0) {
       return res.status(404).json({
         error: 'No encontrado'
       });
     }
-
     res.json({
       mensaje: 'Actualizado correctamente'
     });
-
   });
-
 });
 
 
