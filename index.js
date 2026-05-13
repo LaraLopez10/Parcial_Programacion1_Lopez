@@ -76,18 +76,6 @@ app.put('/celulares/:id', (req, res) => {
 
 });
 
-// // PUT actualizar celular
-// app.put('/celulares/:id', (req, res) => {
-//     const { id } = req.params;
-//     const { nombre, precio, stock } = req.body;
-//     const sql = 'UPDATE celulares SET nombre = ?, precio = ?, stock = ? WHERE id = ?';
-//     db.query(sql, [id ,nombre, precio, stock], (err, r) => {
-//         if (err) return res.status(500).json({ error: err.message });
-//         if (r.affectedRows === 0) {
-//             return res.status(404).json({ error: 'No se encontró el celular para actualizar' });
-//         }
-//         res.json({ mensaje: 'Celular actualizado con éxito', id, nombre, precio, stock });
-//     });
-// });
+
 
 app.listen(3000, () => console.log('Servidor en http://localhost:3000/'))
