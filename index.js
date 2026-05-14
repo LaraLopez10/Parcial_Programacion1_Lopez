@@ -66,6 +66,7 @@ app.put('/celulares/:id', (req, res) => {
       mensaje: 'Actualizado correctamente'
     });
   });
+
 });
 
 
